@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090d1a">
+  <title>NEW UMAR AI — Creator Studio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#"><span class="brand-mark">N</span><span>NEW UMAR <b>AI</b><small>CREATOR STUDIO</small></span></a>
+      <p class="nav-label">WORKSPACE</p>
+      <a class="nav-item active" href="#overview">▦ <span>Dashboard</span></a>
+      <a class="nav-item" href="#studio">✦ <span>AI Content Studio</span></a>
+      <a class="nav-item" href="#editor">▣ <span>Video Editor</span></a>
+      <a class="nav-item" href="#library">▤ <span>Media Library</span></a>
+      <a class="nav-item" href="#publishing">↗ <span>Publishing</span></a>
+      <div class="sidebar-bottom"><span class="status-dot"></span> Prototype workspace <small>Private access setup pending</small></div>
+    </aside>
+
+    <main class="main-content" id="overview">
+      <header class="topbar">
+        <div><p class="eyebrow">YOUR PRIVATE CREATOR WORKSPACE</p><h1>Good day, Creator <span>✦</span></h1><p class="muted">Plan, prepare and manage your social content in one place.</p></div>
+        <div class="avatar">U</div>
+      </header>
+
+      <section class="hero-card">
+        <div class="hero-copy"><span class="pill">✦ AI CREATOR SUITE</span><h2>Make your next idea<br><em>ready to share.</em></h2><p>Upload media, prepare a story and review everything before publishing.</p><a class="primary-btn" href="#studio">Open Content Studio <span>→</span></a></div>
+        <div class="hero-art"><div class="orb orb-one"></div><div class="orb orb-two"></div><div class="play-card">▶<small>YOUR NEXT VIDEO</small></div><div class="spark">✦</div></div>
+      </section>
+
+      <section class="stats-grid">
+        <article class="stat-card"><span class="stat-icon purple">▣</span><p>Media added</p><strong id="media-count">0</strong><small>Files in this session</small></article>
+        <article class="stat-card"><span class="stat-icon blue">✎</span><p>Draft captions</p><strong id="draft-count">0</strong><small>Prepared on this device</small></article>
+        <article class="stat-card"><span class="stat-icon gold">◷</span><p>Scheduled posts</p><strong>0</strong><small>Publishing connection pending</small></article>
+      </section>
+
+      <section class="content-grid">
+        <article class="panel upload-panel" id="library">
+          <div class="section-heading"><div><p class="eyebrow">STEP 01</p><h3>Upload your media</h3></div><span class="soft-tag">VIDEO / IMAGE</span></div>
+          <label class="dropzone" for="media-input"><span class="upload-symbol">↑</span><strong>Choose videos or pictures</strong><small>Tap to select files from your device</small><span class="browse-btn">Browse files</span></label>
+          <input id="media-input" type="file" accept="video/*,image/*" multiple hidden>
+          <div id="media-list" class="media-list"><p class="empty-note">Your selected files will appear here. Files are previewed locally in this browser.</p></div>
+        </article>
+
+        <article class="panel studio-panel" id="studio">
+          <div class="section-heading"><div><p class="eyebrow">STEP 02</p><h3>Story & caption studio</h3></div><span class="soft-tag">DRAFT MODE</span></div>
+          <label for="topic">What is your video about?</label>
+          <textarea id="topic" rows="3" placeholder="Write a few words about your video..."></textarea>
+          <div class="two-fields"><div><label for="tone">Writing style</label><select id="tone"><option>Engaging</option><option>Inspirational</option><option>Informative</option><option>Funny</option></select></div><div><label for="language">Language</label><select id="language"><option>English</option><option>Hindi</option><option>Urdu</option></select></div></div>
+          <button class="primary-btn full" id="draft-btn">✦ Create starter draft</button>
+          <p class="helper">AI provider is not connected yet. This first version creates a simple editable starter draft.</p>
+          <div class="draft-output" id="draft-output"><span class="empty-note">Your caption draft will appear here.</span></div>
+          <button class="outline-btn full" id="copy-btn" disabled>Copy caption</button>
+        </article>
+      </section>
+
+      <section class="panel lower-panel" id="editor">
+        <div class="section-heading"><div><p class="eyebrow">STEP 03</p><h3>VIP video editing</h3></div><span class="soft-tag">COMING NEXT</span></div>
+        <div class="feature-row"><div class="feature-icon">✂</div><div><strong>AI-assisted editing tools</strong><p>Auto-trim, subtitles, music, voiceover, templates and export will be added after connecting a video-processing service.</p></div><span class="lock">SETUP NEEDED</span></div>
+      </section>
+
+      <section class="panel lower-panel" id="publishing">
+        <div class="section-heading"><div><p class="eyebrow">STEP 04</p><h3>Review & publishing</h3></div><span class="soft-tag">APPROVAL REQUIRED</span></div>
+        <p class="muted">Social accounts are not connected yet. When integrations are configured, you will be able to review each post and approve it before it goes live.</p>
+        <div class="platforms"><span>Facebook</span><span>Instagram</span><span>YouTube</span><span>WhatsApp</span></div>
+      </section>
+      <footer>NEW UMAR AI <span>•</span> First prototype · Your media stays in this browser session</footer>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
